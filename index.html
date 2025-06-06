@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>fashion</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+
+    <!-- Icons & Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/Favicon 35x35.png" type="image/png" sizes="35x35" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <!-- <div id="google_translate_element"></div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <!-- Logo Section -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="image 1 (2).jpg" alt="Brand Logo 1" height="40">
+                    <img src="image 1 (1).jpg" alt="Brand Logo 2" height="40" class="ms-2 d-none d-md-inline">
+                    <!-- Hidden on mobile -->
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top-sales">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <!-- Mobile Shop Now Button (Smaller) -->
+                        <li class="nav-item d-lg-none text-center">
+                            <a href="#top-sales" class="btn btn-light w-75 mt-2 shop-now-btn">Shop Now</a>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop Shop Now Button -->
+                    <a href="#sellers" class="btn btn-light ms-3 d-none d-lg-inline shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--carousel-->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imag2/DSC01686.jpg" class="d-block w-100 carousel-img" alt="Fashion Slide 1">
+                    <div class="carousel-caption text-center">
+                        <h2 class="carousel-title">New Arrivals</h2>
+                        <p class="carousel-text">Discover the latest trends in fashion</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="output 2/DSC02003.jpg" class="d-block w-100 carousel-img" alt="Fashion Slide 2">
+                    <div class="carousel-caption text-center">
+                        <h2 class="carousel-title">Luxury Collection</h2>
+                        <p class="carousel-text">Designed for elegance and comfort</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="output 2/DSC02012.jpg" class="d-block w-100 carousel-img" alt="Fashion Slide 3">
+                    <div class="carousel-caption text-center">
+                        <h2 class="carousel-title">Summer Collection</h2>
+                        <p class="carousel-text">Fresh styles for the summer season</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="output 2/DSC01961.jpg" class="d-block w-100 carousel-img" alt="Fashion Slide 3">
+                    <div class="carousel-caption text-center">
+                        <h2 class="carousel-title">Summer Collection</h2>
+                        <p class="carousel-text">Fresh styles for the summer season</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous & Next Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <section id="new-arrivals" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-light mb-4">New Arrivals</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card">
+                        <img src="output 2/DSC02023.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Stylish</h5>
+                            <p class="card-text"></p>
+                            <a href="product.html?id=1&variant=stylish-jacket" class="btn glow-button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card">
+                        <img src="output 2/DSC02012.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Elegant</h5>
+                            <p class="card-text"></p>
+                            <a href="product.html?id=2&variant=elegant-dress" class="btn glow-button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card">
+                        <img src="output 2/DSC02030.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Casual</h5>
+                            <p class="card-text"></p>
+                            <a href="product.html?id=3&variant=casual-hoodie" class="btn glow-button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-black text-white">
+        <div class="container">
+            <!-- Hero Title -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-5">About <span class="text-warning">Our Store</span></h2>
+                <p class="text-light">Discover quality, elegance, and style in every piece we offer.</p>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Left: Video -->
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <video autoplay muted loop class="img-fluid rounded shadow-lg">
+                            <source src="M&S Men's Style The Art of Tailoring - TV AD 2016 - 720.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-3 rounded shadow-lg">
+                            <h4 class="text-warning fw-bold">1000+ Happy Customers</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text -->
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-warning">Our Story</h3>
+                    <p class="text-light">
+                        At <strong>Elite Fashion Hub</strong>, we are committed to bringing you the finest fashion
+                        pieces.
+                        Our journey started with a deep passion for elegance, and today, we curate a collection that
+                        blends
+                        **premium quality, affordability, and style**.
+                    </p>
+                    <p class="text-light">
+                        Whether you're looking for **classic, modern, or luxury fashion**, we ensure every product meets
+                        our highest standards. We prioritize customer satisfaction, offering **unique and trendy
+                        selections** tailored just for you.
+                    </p>
+                    <div class="d-flex mt-4">
+                        <a href="https://wa.me/918904018782?text=Hello, I'm interested in your products!"
+                            target="_blank" class="btn btn-warning text-dark me-3">Learn More</a>
+                        <a href="tel:+918904018782" class="btn btn-outline-light">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="row text-center mt-5">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-lg">
+                        <i class="bi bi-gem text-warning display-4"></i>
+                        <h4 class="mt-3">Premium Quality</h4>
+                        <p class="text-light">Our pieces are designed with **top-tier materials and craftsmanship**.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-lg">
+                        <i class="bi bi-truck text-warning display-4"></i>
+                        <h4 class="mt-3">Fast & Reliable Delivery</h4>
+                        <p class="text-light">Get your orders **delivered quickly and safely, wherever you are**.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-lg">
+                        <i class="bi bi-hand-thumbs-up text-warning display-4"></i>
+                        <h4 class="mt-3">Customer Satisfaction</h4>
+                        <p class="text-light">We are trusted by **1000+ happy customers worldwide**.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="mt-5">
+                <h3 class="fw-bold text-center text-warning">What Our Customers Say</h3>
+                <div id="testimonialCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="text-light">"Absolutely love the quality of the products! The delivery was fast,
+                                and the fit was perfect!"</p>
+                            <h5 class="text-warning">— Sarah Johnson</h5>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-light">"I received so many compliments on my outfit! The customer support was
+                                very helpful!"</p>
+                            <h5 class="text-warning">— David Mensah</h5>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-light">"The best online shopping experience I've had. Amazing quality at a
+                                great price!"</p>
+                            <h5 class="text-warning">— Jessica Lee</h5>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--top sales-->
+    <section id="top-sales" class="container my-5">
+        <h2 class="text-center text-white mb-4"> Top Sales</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="output 2/DSC02002.jpg" class="card-img-top" alt="Top Sale 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Suit</h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=101" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="output 2/DSC01964.jpg" class="card-img-top" alt="Top Sale 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Denim </h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=102" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="output 2/DSC02058.jpg" class="card-img-top" alt="Top Sale 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Wear </h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=103" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="imag2/DSC01603.jpg" class="card-img-top" alt="Top Sale 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Designes</h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=104" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="imag2/DSC01739.jpg" class="card-img-top" alt="Top Sale 5">
+                    <div class="card-body">
+                        <h5 class="card-title"> Wear</h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=105" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card product-card">
+                    <img src="imag2/DSC01792.jpg" class="card-img-top" alt="Top Sale 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Men Suit</h5>
+                        <p class="card-text"></p>
+                        <a href="topsales.html?id=106" class="btn glow-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--top sales-->
+    <section id="hot-sales" class="container mt-5">
+        <h2 class="text-center text-light mb-4">🔥 Hot Sales 🔥</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="hot-card">
+                    <img src="shoes/brogue-shoes-5983822_1280.jpg" alt="Hot Sale Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Shoes</h5>
+                        <p>Get the best comfort and style.</p>
+                        <a href="https://wa.me/918904018782?text=Hello,%20I'm%20interested%20in%20this%20product!"
+                            target="_blank" class="btn btn-primary">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="hot-card">
+                    <img src="shoes/oxford-shoes-6078993_1280.jpg" alt="Hot Sale Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy</h5>
+                        <p>Get the best comfort and style.</p>
+                        <a href="https://wa.me/918904018782?text=Hello,%20I'm%20interested%20in%20this%20product!"
+                            target="_blank" class="btn btn-primary">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="hot-card">
+                    <img src="shoes/1.jpg" alt="Hot Sale Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <p>Stay warm in style with this premium.</p>
+                        <a href="https://wa.me/918904018782?text=Hello,%20I'm%20interested%20in%20this%20product!"
+                            target="_blank" class="btn btn-primary">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="brands-partners" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">🚀 Our Trusted Brands & Partners</h2>
+            <div class="row justify-content-center">
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 brand-logo">
+                    <img src="brand1.png" alt="Brand 1">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 brand-logo">
+                    <img src="brand2.png" alt="Brand 2">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 brand-logo">
+                    <img src="brand3.png" alt="Brand 3">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 brand-logo">
+                    <img src="brand4.png" alt="Brand 4">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 brand-logo">
+                    <img src="brand5.png" alt="Brand 5">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Owner's Section -->
+    <section id="owner" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">👤 Meet the Founder</h2>
+            <div class="owner-card">
+                <div class="owner-image">
+                    <img src="imag2/DSC01599.jpg" alt="Noel Tshibangun">
+                </div>
+                <div class="owner-info">
+                    <h4>Noel Tshibangun</h4>
+                    <p class="founder-title">Founder & CEO, Fashion Store</p>
+                    <p class="founder-quote">
+                        <i>"Our mission is to provide the latest fashion trends with quality and affordability."</i>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61573634511720&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="text-dark me-3" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://wa.me/918904018782" class="text-dark me-3">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clothing-slider" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Clothing Collection</h2>
+            <div id="clothesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="imag2/DSC01729.jpg" class="d-block w-100 clothes-img" alt="Fashion 1">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="output 2/DSC01976.jpg" class="d-block w-100 clothes-img" alt="Fashion 2">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="output 2/DSC02011.jpg" class="d-block w-100 clothes-img" alt="Fashion 3">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <img src="output 2/DSC02045.jpg" class="d-block w-100 clothes-img" alt="Fashion 4">
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <img src="imag2/DSC01660.jpg" class="d-block w-100 clothes-img" alt="Fashion 5">
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-item">
+                        <img src="imag2/DSC01776.jpg" class="d-block w-100 clothes-img" alt="Fashion 6">
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="carousel-item">
+                        <img src="imag2/DSC01813.jpg" class="d-block w-100 clothes-img" alt="Fashion 7">
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="carousel-item">
+                        <img src="imag2/DSC01863.jpg" class="d-block w-100 clothes-img" alt="Fashion 8">
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#clothesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clothesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!-- Dots Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#clothesCarousel" data-bs-slide-to="7"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🌟 What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="testimonial-content">
+                                <img src="customer1.jpg" alt="Customer 1" class="rounded-circle testimonial-img">
+                                <h5 class="mt-3">Emily Johnson</h5>
+                                <p class="text-muted">"Absolutely love the quality of the clothes! Fast delivery and
+                                    amazing designs."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="testimonial-content">
+                                <img src="customer2.jpg" alt="Customer 2" class="rounded-circle testimonial-img">
+                                <h5 class="mt-3">Michael Smith</h5>
+                                <p class="text-muted">"Great customer service! The clothes fit perfectly. Highly
+                                    recommend."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="testimonial-content">
+                                <img src="customer3.jpg" alt="Customer 3" class="rounded-circle testimonial-img">
+                                <h5 class="mt-3">Sophia Williams</h5>
+                                <p class="text-muted">"Fashion Store always delivers top-notch quality. I’m a loyal
+                                    customer now!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+ -->
+
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">📩 Contact Us</h2>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <form class="contact-form hidden-animation" id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Write your message (min. 20 characters)" minlength="20"
+                                required></textarea>
+                            <small class="text-danger d-none" id="messageError">Message must be at least 20 characters
+                                long.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-6">
+                    <div class="contact-info p-4 border rounded">
+                        <h4>📞 Call Us</h4>
+                        <p>+918904018782</p>
+
+                        <h4>📧 Email</h4>
+                        <p>
+                            <a href="mailto:Tshibangun0@gmail.com" class="email-link text-warning fw-bold">
+                                Tshibangun0@gmail.com
+                            </a>
+                        </p>
+
+                        <h4>🔗 Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61573634511720&mibextid=wwXIfr&mibextid=wwXIfr"
+                                class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+
+                            <a href="https://www.instagram.com/ntstyles0" class="text-white me-3" target="_blank"><i
+                                    class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://wa.me/918904018782" class="text-white me-3">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Modal for Success Message -->
+    <div class="modal fade" id="messageSentModal" tabindex="-1" aria-labelledby="messageSentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg rounded-4 border-0">
+                <div class="modal-header bg-gradient text-white"
+                    style="background: linear-gradient(45deg, #28a745, #218838); border-top-left-radius: 12px; border-top-right-radius: 12px;">
+                    <h5 class="modal-title fw-bold" id="messageSentLabel">✅ Message Sent</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-check-circle fa-4x text-success animate__animated animate__bounceIn"></i>
+                    </div>
+                    <p class="fw-bold text-dark fs-5">Your message has been sent! We will get back to you as soon as
+                        possible.</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success px-4 py-2 rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cookie Consent Popup -->
+    <div id="cookieConsent" class="position-fixed bottom-3 end-3 p-4 bg-dark text-white rounded-3 shadow-lg fade-in"
+        style="display: none; max-width: 350px; backdrop-filter: blur(10px); z-index: 1050;">
+        <p class="mb-2">
+            🍪 <strong>We Value Your Privacy</strong>
+            This website uses cookies to ensure you get the best experience.
+            <a href="#" class="text-warning fw-bold">Learn More</a>.
+        </p>
+        <div class="d-flex justify-content-end">
+            <button id="acceptCookies" class="btn btn-warning btn-sm fw-bold px-3 shadow-sm">Accept</button>
+        </div>
+    </div>
+
+
+    <!-- Live Chatbox -->
+    <div class="chatbox-container">
+        <button id="chatbox-toggle" class="chatbox-button">
+            💬 Chat with Us
+        </button>
+
+        <div id="chatbox-menu" class="chatbox-menu">
+            <p class="chatbox-title">Chat with Us</p>
+            <a href="https://wa.me/+918904018782" target="_blank" class="chat-option whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://m.me/+918904018782" target="_blank" class="chat-option messenger">
+                <i class="fab fa-facebook-messenger"></i> Messenger
+            </a>
+            <a href="mailto:Tshibangun0@gmail.com" class="chat-option email">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--footer-->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- About Section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">👗 About Us</h4>
+                    <p>Discover the latest trends in fashion. We provide high-quality and stylish clothing at the best
+                        prices.</p>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">📰 Subscribe to Our Newsletter</h4>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Customer Support & FAQ -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">❓ Need Help?</h4>
+                    <p><a href="#faq" class="text-white">Frequently Asked Questions</a></p>
+                    <p><a href="#contact" class="text-white">Contact Customer Support</a></p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">📍 Contact Us</h4>
+                    <p>123 Fashion Street, Accra, Ghana</p>
+                    <p>📞 +918904018782</p>
+                    <p>📧 Tshibangun0@gmail.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://wa.me/918904018782" class="text-white"><i
+                                class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 KayyedCodex. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <!-- Load Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
